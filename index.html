@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Light/Dark mode toggle website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <script type="text/javascript">
+      function switchmode(){
+        let moon =document.getElementById("moon");
+        if(moon.className=="moon"){
+          moon.className="sun";
+          document.body.style.backgroundColor="#141D26";
+          document.body.style.color="#fff";
+        }
+        else{
+          moon.className="moon";
+          document.body.style.backgroundColor="#fff";
+          document.body.style.color="#000";
+        }
+      }
+
+
+    </script>
+  </head>
+  <body>
+    <br><br>
+    <center>
+      <h1>A Tiny Project</h1><br>
+      <h2>Light/Dark mode toggle</h2><br><br>
+    <center>
+    <div class="night-toggle" onclick="switchmode()">
+      <div class="moon" id="moon"></div>
+    </div>
+
+    <div class="opt">
+      <div class="break"></div>
+      <div class="text">
+        Click on the "<b>Moon</b>" to get the dark mode.
+        <br>
+        Click on the "<b>Sun</b>" to get the light mode.
+        <br><br><br>
+        <b>Tadaaa....!!!</b>
+      </div>
+    </div>
+  </body>
+</html>
